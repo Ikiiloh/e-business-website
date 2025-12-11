@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "Mulailah perjalanan gaya anda dengan accessories-accessories dari Studio Accessories Terbaik di Kota Padang. Kunjungi kami hari ini!",
   generator: "v0.app",
   keywords: ["aksesoris", "padang", "kacamata", "gelang", "kalung", "cincin", "fashion"],
+  icons: {
+    icon: "/logo_ijum.svg",
+    shortcut: "/logo_ijum.svg",
+    apple: "/logo_ijum.svg",
+  },
 }
 
 export const viewport: Viewport = {

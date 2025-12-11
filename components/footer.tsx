@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Sparkles, Phone, Mail, MapPin, Clock } from "lucide-react"
 import { businessInfo, navLinks } from "@/lib/data"
 
@@ -10,6 +11,15 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
+              <div className="bg-white rounded-full p-1">
+                <Image
+                  src="/logo_ijum.svg"
+                  alt="Ijum Accessories Logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8 object-contain"
+                />
+              </div>
               <span className="font-serif text-xl font-semibold">{businessInfo.name}</span>
             </Link>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">{businessInfo.tagline}</p>
