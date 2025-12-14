@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Banknote, QrCode, Building2, Clock, MapPin } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -77,13 +78,10 @@ export default function PaymentPage() {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-4">Pembayaran digital dengan dompet elektronik</p>
-              <div className="p-4 bg-amber-50 dark:bg-amber-950/20 rounded-lg border border-amber-200 dark:border-amber-900">
-                <div className="flex items-center justify-center gap-2 text-amber-800 dark:text-amber-200">
-                  <Clock className="h-4 w-4" />
-                  <p className="text-sm font-medium">Segera Hadir</p>
-                </div>
-                <p className="text-xs text-amber-700 dark:text-amber-300 mt-1">Coming Soon</p>
-              </div>
+
+
+              <Image src="/qris.jpg" alt="QRIS" width={200} height={200} className="mx-auto my-4" />
+
             </CardContent>
           </Card>
         </div>

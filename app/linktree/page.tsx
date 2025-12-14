@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MessageCircle, MapPin, ShoppingBag, Facebook, Music2, Phone, Mail } from "lucide-react"
+import { MessageCircle, MapPin, ShoppingBag, Facebook, Music2, Phone, Mail, Instagram, Youtube } from "lucide-react"
+import "./linktree.css"
 import { businessInfo } from "@/lib/data"
 
 const links = [
@@ -39,7 +40,21 @@ const links = [
     icon: MapPin,
     color: "bg-red-500/10 text-red-600 hover:bg-red-500/20",
   },
-]
+  {
+    title: "Instagram",
+    description: "Follow us on Instagram",
+    href: "https://www.instagram.com/ijumaccesories?igsh=Ymd0aWp3eWducThz",
+    icon: Instagram,
+    color: "bg-pink-500/10 text-pink-600 hover:bg-pink-500/20",
+  },
+  {
+    title: "YouTube Shorts",
+    description: "Watch our Shorts on YouTube",
+    href: "https://youtube.com/shorts/LCWtEu0_sks?feature=share",
+    icon: Youtube,
+    color: "bg-red-500/10 text-red-600 hover:bg-red-500/20",
+  },
+];
 
 export default function LinktreePage() {
   return (
